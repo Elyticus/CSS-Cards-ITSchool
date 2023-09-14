@@ -1,6 +1,7 @@
 :root {
   --body-font: "Barlow", sans-serif;
   --blue-color: rgb(76, 15, 251);
+  --red-color: rgb(251, 15, 15);
 }
 
 .container {
