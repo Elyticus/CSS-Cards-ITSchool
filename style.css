@@ -1,0 +1,195 @@
+:root {
+  --body-font: "Barlow", sans-serif;
+  --blue-color: rgb(76, 15, 251);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 7%;
+  margin-inline: 3.75em;
+  gap: 1rem;
+}
+
+.card1,
+.amazon-logo {
+  box-shadow: rgba(19, 15, 235, 0.1) 1px 2px 20px;
+}
+
+.profile-pic,
+.amazon-logo,
+.hootsuite-logo {
+  border-radius: 50%;
+}
+
+.card1 {
+  position: relative;
+  max-width: 366px;
+  min-height: 435px;
+
+  padding: 1.875em;
+  border-radius: 25px;
+  font-family: var(--body-font);
+
+  background-color: #ffff;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+p,
+a {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.875em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.title {
+  margin-bottom: 0.625em;
+  font-weight: 400;
+}
+
+.profile-pic {
+  width: 75px;
+  height: 75px;
+}
+
+.profile-icon {
+  position: absolute;
+  top: -40px;
+}
+.amazon-logo,
+.fa-linkedin-in,
+.fa-github,
+.fa-twitter {
+  padding: 0.625em;
+}
+
+.amazon-logo {
+  position: absolute;
+  right: -55px;
+  width: 55px;
+  height: 55px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.details {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.345);
+}
+
+a {
+  color: rgb(76, 15, 251);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.middle-link {
+  margin-left: 0;
+}
+
+.social-media {
+  padding-top: 1.25em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fa-youtube {
+  cursor: pointer;
+
+  font-size: 2rem;
+  color: var(--blue-color);
+}
+
+.fa-greater-than {
+  cursor: pointer;
+  color: var(--blue-color);
+}
+
+.fa-linkedin-in,
+.fa-github,
+.fa-twitter {
+  cursor: pointer;
+  color: var(--blue-color);
+
+  border: 1px solid var(--blue-color);
+  border-radius: 50%;
+  margin-right: 0.4em;
+}
+
+.social-icons,
+.title {
+  margin-top: 0px;
+}
+
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-twitter:hover {
+  color: black;
+  border: 1px solid black;
+  transition: 0.4s ease-in-out;
+}
+
+.middle-info {
+  padding-bottom: 4.6rem;
+}
+
+.hootsuite {
+  max-height: 35px;
+  max-width: 55px;
+}
+
+.hootsuite-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+
+  right: -55px;
+  width: 75px;
+  height: 75px;
+  box-shadow: rgba(19, 15, 235, 0.1) 2px 4px 15px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media all and (max-width: 480px) {
+  body {
+    background-color: rgb(43, 153, 226);
+  }
+
+  p,
+  a,
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  .container {
+    margin: 6.25em 1.25em;
+    gap: 5rem;
+  }
+
+  .card1 {
+    box-shadow: rgba(10, 10, 10, 0.408) 1px 2px 20px;
+  }
+
+  .hootsuite {
+    max-width: 50px;
+  }
+}
