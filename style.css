@@ -1,6 +1,7 @@
 :root {
   --body-font: "Barlow", sans-serif;
   --blue-color: rgb(76, 15, 251);
+  --red-color: rgb(251, 15, 15);
 }
 
 .container {
@@ -106,23 +107,28 @@ a:hover {
   text-decoration: underline;
 }
 
+.fa-youtube,
+.fa-greater-than,
+.fa-linkedin-in,
+.fa-github,
+.fa-twitter {
+  color: var(--blue-color);
+}
+
 .fa-youtube {
   cursor: pointer;
 
   font-size: 2rem;
-  color: var(--blue-color);
 }
 
 .fa-greater-than {
   cursor: pointer;
-  color: var(--blue-color);
 }
 
 .fa-linkedin-in,
 .fa-github,
 .fa-twitter {
   cursor: pointer;
-  color: var(--blue-color);
 
   border: 1px solid var(--blue-color);
   border-radius: 50%;
@@ -137,8 +143,9 @@ a:hover {
 .fa-linkedin-in:hover,
 .fa-github:hover,
 .fa-twitter:hover {
-  color: black;
-  border: 1px solid black;
+  color: white;
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
   transition: 0.4s ease-in-out;
 }
 
